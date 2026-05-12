@@ -1,0 +1,349 @@
+/* ========================================
+   PAGO - ECO EXPLORA TATACOA
+   ======================================== */
+
+/* ---------- CONTENEDOR PRINCIPAL ---------- */
+.pago-container {
+    max-width: 1200px;
+    margin: 100px auto 40px;
+    padding: 0 20px;
+}
+
+/* ---------- ENCABEZADO ---------- */
+.pago-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pago-header h1 {
+    color: var(--cactus);
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.pago-header p {
+    color: var(--text-light);
+    font-size: 16px;
+}
+
+/* ---------- BARRA DE RESUMEN (PROGRESS BAR) ---------- */
+.progress-bar {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: var(--shadow);
+}
+
+.progress-bar h4 {
+    color: var(--cactus);
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-bottom: 2px solid var(--sand);
+    padding-bottom: 10px;
+}
+
+.progress-step {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--sand-light);
+}
+
+.progress-step .check {
+    width: 35px;
+    font-size: 18px;
+}
+
+.progress-step span:nth-child(2) {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.progress-step .precio {
+    font-weight: bold;
+    color: var(--cactus);
+    min-width: 100px;
+    text-align: right;
+}
+
+/* Lugares - Subsección */
+.lugares-header {
+    background: var(--sand-light);
+    margin-top: 5px;
+    border-radius: 8px;
+    padding: 8px 10px;
+}
+
+.lugar-item {
+    padding-left: 45px;
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+.subtotal {
+    background: var(--sand-light);
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+/* Separador y Total */
+.divider {
+    border-bottom: 2px dashed var(--sand);
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+.total {
+    font-size: 20px;
+    padding: 15px 0;
+    border-bottom: none;
+    background: var(--sand-light);
+    border-radius: 12px;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.precio-final {
+    font-size: 24px;
+    color: var(--terracota);
+}
+
+.nota-pago {
+    margin-top: 15px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-light);
+    border-top: 1px solid var(--sand-light);
+}
+
+/* ---------- GRID PRINCIPAL ---------- */
+.pago-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+/* ---------- RESUMEN DEL TOUR ---------- */
+.resumen-tour {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: var(--shadow);
+}
+
+.resumen-tour h2 {
+    color: var(--cactus);
+    font-size: 22px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--sand);
+    padding-bottom: 10px;
+}
+
+.resumen-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--sand);
+}
+
+.resumen-label {
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.resumen-value {
+    color: var(--text-light);
+    text-align: right;
+}
+
+.resumen-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 15px;
+    background: var(--sand-light);
+    border-radius: 12px;
+}
+
+.total-label {
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--cactus-dark);
+}
+
+.total-value {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--cactus);
+}
+
+/* ---------- FORMULARIO DE PAGO ---------- */
+.formulario-pago {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: var(--shadow);
+}
+
+.formulario-pago h2 {
+    color: var(--cactus);
+    font-size: 22px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--sand);
+    padding-bottom: 10px;
+}
+
+/* Métodos de pago */
+.metodos-pago {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.metodo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border: 2px solid var(--sand);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.metodo:hover {
+    border-color: var(--cactus);
+    background: var(--sand-light);
+}
+
+.metodo.seleccionado {
+    border-color: var(--cactus);
+    background: var(--sand-light);
+}
+
+.metodo-icono {
+    font-size: 36px;
+}
+
+.metodo-info {
+    flex: 1;
+}
+
+.metodo-nombre {
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--text-dark);
+}
+
+.metodo-descripcion {
+    font-size: 13px;
+    color: var(--text-light);
+}
+
+/* Datos bancarios */
+.datos-pago {
+    margin-top: 20px;
+    padding: 20px;
+    background: var(--sand-light);
+    border-radius: 12px;
+}
+
+.datos-pago h3 {
+    color: var(--cactus);
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.dato-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--sand);
+}
+
+.dato-label {
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.dato-value {
+    color: var(--text-light);
+}
+
+/* Botón confirmar */
+.btn-confirmar {
+    width: 100%;
+    margin-top: 20px;
+    background: var(--cactus);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-confirmar:hover {
+    background: var(--cactus-dark);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    .pago-container {
+        margin: 80px 15px 20px;
+    }
+    
+    .pago-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .resumen-item {
+        flex-direction: column;
+    }
+    
+    .resumen-value {
+        text-align: left;
+        margin-top: 5px;
+    }
+    
+    .progress-step {
+        flex-wrap: wrap;
+    }
+    
+    .progress-step .precio {
+        min-width: auto;
+    }
+    
+    .lugar-item {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .progress-step {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .progress-step .precio {
+        text-align: left;
+        width: 100%;
+    }
+    
+    .metodo {
+        padding: 12px;
+    }
+    
+    .metodo-icono {
+        font-size: 28px;
+    }
+}
