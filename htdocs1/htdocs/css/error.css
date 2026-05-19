@@ -1,0 +1,41 @@
+/* ========== ERROR ========== */
+.error-container {
+    max-width: 500px;
+    margin: 150px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.error-card {
+    background: white;
+    border-radius: 20px;
+    padding: 45px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.error-card h1 {
+    color: #c62828;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.error-card .emoji {
+    font-size: 4rem;
+    margin: 20px 0;
+}
+
+.error-card p {
+    color: #7a5a4a;
+    margin: 10px 0;
+}
+
+.btn-volver {
+    background: #ccc;
+    color: #3e2a21;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}

@@ -1,0 +1,62 @@
+/* ========== TOUR EXITOSO ========== */
+.success-container {
+    max-width: 500px;
+    margin: 150px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.success-card {
+    background: white;
+    border-radius: 20px;
+    padding: 45px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.success-card h1 {
+    color: #5a7d3c;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.success-card .emoji {
+    font-size: 4rem;
+    margin: 20px 0;
+}
+
+.success-card p {
+    color: #7a5a4a;
+    margin: 10px 0;
+}
+
+.btn-dashboard {
+    background: linear-gradient(135deg, #c26b4a, #a0522d);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: transform 0.2s;
+}
+
+.btn-dashboard:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .success-container {
+        margin: 100px auto 30px;
+        padding: 15px;
+    }
+    .success-card {
+        padding: 30px 25px;
+    }
+    .success-card h1 {
+        font-size: 1.5rem;
+    }
+    .success-card .emoji {
+        font-size: 3rem;
+    }
+}
